@@ -1,16 +1,16 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Registration from "./conteiner/Registration/Index";
+import Registration from "./conteiners/Registration/index";
 import Content from "./components/Content";
-import RequestCity from "./conteiner/RequestCity";
 import PageWrapper from "./components/PageWrapper";
-import RequestCityWeather from "./conteiner/RequestCityWeather";
+import RequestCityWeather from "./conteiners/RequestCityWeather";
+import RequestIp from "./conteiners/RequestIp";
 
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<PageWrapper />}>
-        <Route path="/" element={<RequestCity />} />
+        <Route path="/" element={<RequestIp />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/info" element={<Content />} />
         <Route path="/weather" element={<RequestCityWeather />} />

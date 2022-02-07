@@ -1,0 +1,10 @@
+@import "../../assets/style/vars";
+.wrapper-example {
+  height: 80px;
+  width: 100%;
+  background-color:$sub-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
